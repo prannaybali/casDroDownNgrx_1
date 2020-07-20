@@ -22,13 +22,13 @@ export class AppComponent implements OnInit{
 
 
 
-  loadSelectedCountry(){
-    this.selectedCountry = this.db.getSelectedCountry();
-   // console.log(this.selectedCountry);
-    this.showTable = true;
-    console.log(this.store.select('DropDownNew'));
-     this.store.dispatch(new DropDownActions.SelectCountry([this.selectedCountry]));
+  // loadSelectedCountry(){
+  //   this.selectedCountry = this.db.getSelectedCountry();
+  //  // console.log(this.selectedCountry);
+  //   this.showTable = true;
+  //   console.log(this.store.select('DropDownNew'));
+  //    this.store.dispatch(new DropDownActions.SelectCountry([this.selectedCountry]));
 
-  }
+  // }
 
 }

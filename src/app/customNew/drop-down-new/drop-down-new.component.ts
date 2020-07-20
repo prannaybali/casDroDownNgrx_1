@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {DropServiceService} from "../../services/drop-service.service";
 import {Subscription} from "rxjs";
+import  { Store } from '@ngrx/store';
+import * as DropDownActions from '../store/drop-down.actions'
+
 export  interface Region {
   name:string,
   value:string,
@@ -17,7 +20,8 @@ export class DropDownNewComponent implements OnInit {
   countries: any;
   selectedRegion: any;
   selectedCountry: any;
-  constructor(private dropDownService: DropServiceService) { }
+  constructor(private dropDownService: DropServiceService,
+    private store: Store<{DropDownNew:{regions: {name: string, value: string}[], country:{}}}>) { }
 
   ngOnInit() {
     this.regions = this.dropDownService.getRegions();
@@ -33,6 +37,7 @@ export class DropDownNewComponent implements OnInit {
 
   onCountrySelect(para) {
     this.dropDownService.setSelectedCountry(para);
+    this.store.dispatch(new DropDownActions.SelectCountry([this.selectedCountry]));
   }
 
 }

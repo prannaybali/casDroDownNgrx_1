@@ -19,12 +19,12 @@ export function dropDownReducer(state = initialState,
                                 // action :dropDownActions.SelectRegion,
                                 action: dropDownActions.SelectCountry){
   //recives 2 args
-  console.log(state, action);
+  // console.log(state, action);
    switch(action.type) {
      case dropDownActions.SELECT_COUNTRY:
        // let a = { ...state, countries: action.payload};
        let a = { ...state, country: action.payload};
-       console.log(a.country);
+      //  console.log(a.country);
        return a.country;
 
      // case dropDownActions.SELECT_COUNTRY:
