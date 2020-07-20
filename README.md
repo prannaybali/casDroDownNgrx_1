@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # RegionSelect
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
@@ -27,11 +24,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
+
 # dropDownsWithRedux
 cascading dropdowns with ngrx
->>>>>>> 94386dc43389f87e622219f9b87fcdf3e4809a89
-=======
+
 # casDroDownNgrx_1
 cascading drop downs for region based country selection and table update with Ngrx
 
@@ -40,4 +36,3 @@ Angular 9/ angular-material(version -4)
 
 # state management 
 ngRX store
->>>>>>> 518fe73b2b163c8d601db0b1abc71ce576a0a56b
